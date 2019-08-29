@@ -44,20 +44,7 @@ public class UserInterface {
     /**
      * this method either makes the athletes jump or it goes to the results
      */
-    public void roundsMenu() {
-        while (true) {
-            System.out.print("\nWrite \"jump\" to jump; otherwise you quit: ");
-            String action = reader.nextLine();
-            if (action.equalsIgnoreCase("jump")) {
-                jump();
-                roundNumber++;
-            } else {
-                conclusion(this.participants);
-                break;
-            }
-            System.out.println("");
-        }
-    }
+    
 
     /**
      * this method tracks the round number and lists the participants based on
